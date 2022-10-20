@@ -31,7 +31,7 @@
           <q-item-section avatar>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Response</q-item-label>
+            <router-link to="/response"><q-item-label>Response</q-item-label></router-link>
           </q-item-section>
         </q-item>
       </q-list>
