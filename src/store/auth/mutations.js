@@ -5,7 +5,7 @@ export const setToken = (state, token) => {
 }
 
 export const removeToken = (state, token) => {
-  state.token = ''
+  localStorage.setItem('token', '')
   state.isAuthenticated = false
 }
 
