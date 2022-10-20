@@ -71,13 +71,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.wave {
-  position: fixed;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
-</style>

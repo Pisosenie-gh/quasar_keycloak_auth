@@ -13,6 +13,12 @@ const routes = [
     path: '/login',
     component: () => import('pages/Login.vue')
   },
+  {
+    name: 'Response',
+    path: '/response',
+    component: () => import('pages/Response.vue'),
+    meta: { requireLogin: true }
+  },
 
   // Always leave this as last one,
   // but you can also remove it

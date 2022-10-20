@@ -17,7 +17,7 @@ export default defineComponent({
     }
   },
   created () {
-    this.$q.dark.set(true)
+    this.$q.dark.set(false)
   }
 })
 </script>
