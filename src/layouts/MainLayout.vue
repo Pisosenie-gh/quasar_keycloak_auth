@@ -26,12 +26,19 @@
       class="bg-grey-2"
     >
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
+        <q-item-label header>Links</q-item-label>
         <q-item clickable target="_blank" rel="noopener" href="">
           <q-item-section avatar>
           </q-item-section>
           <q-item-section>
             <router-link to="/response"><q-item-label>Response</q-item-label></router-link>
+          </q-item-section>
+        </q-item>
+        <q-item clickable target="_blank" rel="noopener" href="">
+          <q-item-section avatar>
+          </q-item-section>
+          <q-item-section>
+            <router-link to="/request"><q-item-label>Request</q-item-label></router-link>
           </q-item-section>
         </q-item>
       </q-list>

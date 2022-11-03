@@ -22,7 +22,7 @@ const columns = [
     format: val => `${val}`,
     sortable: true
   },
-  { name: 'authorId', align: 'center', label: 'authorId', field: 'authorId', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
+  { name: 'applicantId', align: 'center', label: 'applicantId', field: 'applicantId', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
   { name: 'createApp', label: 'createApp', field: 'createApp', sortable: true, sort: (a, b) => parseInt(a, 10) - parseInt(b, 10) },
   { name: 'createDate', label: 'createDate', field: 'createDate' },
   { name: 'createUser', label: 'createUser', field: 'createUser' },
@@ -42,7 +42,7 @@ export default {
     const token = localStorage.getItem('token')
     console.log('Bearer ' + JSON.parse(token).access_token)
     axios
-      .get('http://10.8.27.97:2929/employee-interaction/v1/response/',
+      .get('http://10.8.27.97:2929/employee-interaction/v1/request/',
         { headers: { Authorization: 'Bearer ' + JSON.parse(token).access_token } })
       .then((response) => {
         this.rows = response.data
