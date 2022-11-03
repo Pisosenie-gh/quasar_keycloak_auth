@@ -42,7 +42,7 @@ export default {
     const token = localStorage.getItem('token')
     console.log('Bearer ' + JSON.parse(token).access_token)
     axios
-      .get('http://10.8.27.97:2929/employee-interaction/v1/request/',
+      .get('http://10.8.27.97:2929/employee-interaction/v1/request/?applicantEmployeeId=2202',
         { headers: { Authorization: 'Bearer ' + JSON.parse(token).access_token } })
       .then((response) => {
         this.rows = response.data
